@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/caulagi
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://caulagi.com
+  * I am caulagi (https://keybase.io/caulagi) on keybase.
+  * I have a public key with fingerprint F493 BB89 5B64 4792 762E  3A20 BFBE 88C9 AD37 C86E
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010175a599254c3211868904f04d644b86d51e9a2ebc199d6de5922efbd74dd19c530a",
+            "fingerprint": "f493bb895b644792762e3a20bfbe88c9ad37c86e",
+            "host": "keybase.io",
+            "key_id": "bfbe88c9ad37c86e",
+            "kid": "010175a599254c3211868904f04d644b86d51e9a2ebc199d6de5922efbd74dd19c530a",
+            "uid": "4862423a52320f2d19f66d08c29b4b19",
+            "username": "caulagi"
+        },
+        "service": {
+            "hostname": "caulagi.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1477817089,
+    "expire_in": 157680000,
+    "prev": "e4106ed769486674a094ef2050a03a7e04783ed35c752c3f3bfedc59a9d69f48",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMIlAnicrVJbSFRBGN71krkhGJXQzegYdFtszjlzLrMKlqAQ3YPUbq4zZ+ZsJ23P
+tnu0zCyM6ME0LXoQu0MRKUJgVD5l4UORkpIVRlfoRlHUlkVk2Byph6DH5mWY//++
+b77v5+9JS/T4vBMnbryQV+rUe29fP1rpKZnS6a0RiE2rhUCNUM7GLlZBWcwJlltU
+CAhABKKmYAUhSYGGLImiruoIQBNAqkJIdJUqIkNYYsQQEaIqZQqSJGYSqkFKRWQo
+MsCCXzCtcIhFI1Er7HBZEyKZEB0phItoSNJUiclYAsQkTNcNhKmsGbrKOHGLHXMZ
+3BzBMZZt2bzGH8Exe//A/2fflWNyUFclKMlYkWQJmBLvm6pKgW5IiEAiIhcYY9Ew
+3sY42sCVFThkCbV+gRerLIO5c3WD/A3INuxtnBmJ2o5t2BW8scVxIgGX51RHXOAO
+RoK/JYLEClM+RE6oYtGYZYeFgMiRhmO5miLUNF3UgI78AtsZsaIsaLkIRVN1wI/7
+DavikgyKQGVUUxEPpWoQAwSZKQEFYCBjjQGo6TKjsmJoimTIpkxMRg0FYT4kZEJd
+cENtD9tCQOY2cYhLxqxQGDuVUSbU3ujelOTx+jzjkhPc5fL4UtP/rNzxI+M9jd30
+UFlK8uoiUfnppbmfW9d0WZ6WwbYn/W0nPmevvTWaHWrqKnmYdv5cef7rwe6LM3O2
+Xpj8tanhwcnC1uKGLv/jDYflrFNnFs7Ony939GaRZWuexnPI1Pr8L8PHf6R27dnN
+vvV7MpaueLvq1bhjEx4tT9/1cmtOXV8I3uu8PP1l5ouOvFj0/t1A2WhR/OCC3s6N
+N54v6kxN9CVnxuMZZ/drSxJ6TuY1Dp1eN/BpJHxt0uJ3PzLb15bm913aOzQnVbjW
+XDeaW1tft9myrtAPKcMR/8fAvqQ7Rf1v8IwDvoWzmosaps140jPvakt7xveb8ZWF
+I6/Xx54FCgpLC94XgoHiuW+HfgFqKjqC
+=IG9F
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/caulagi
+
+==================================================================
+
