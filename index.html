@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
   Identity by HTML5 UP
   html5up.net | @n33co
@@ -11,9 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <!--[if lte IE 9
+      ]><link rel="stylesheet" href="assets/css/ie9.css"
+    /><![endif]-->
+    <!--[if lte IE 8
+      ]><link rel="stylesheet" href="assets/css/ie8.css"
+    /><![endif]-->
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
   </head>
   <body class="is-loading">
     <div id="wrapper">
@@ -25,10 +31,35 @@
         </header>
         <footer>
           <ul class="icons">
-            <li><a href="https://twitter.com/caulagi" title="Twitter" class="fa-twitter">Twitter</a></li>
-            <li><a href="https://github.com/caulagi" title="Github" class="fa-github">Github</a></li>
-            <li><a href="https://blog.caulagi.com" title="Blog" class="fa-book">Blog</a></li>
-            <li><a href="https://www.linkedin.com/in/pradipcaulagi" title="Linkedin" class="fa-linkedin">Linkedin</a></li>
+            <li>
+              <a
+                href="https://twitter.com/caulagi"
+                title="Twitter"
+                class="fa-twitter"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/caulagi"
+                title="Github"
+                class="fa-github"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a href="https://blog.caulagi.com" title="Blog" class="fa-book"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/pradipcaulagi"
+                title="Linkedin"
+                class="fa-linkedin"
+                >Linkedin</a
+              >
+            </li>
           </ul>
         </footer>
       </section>
@@ -42,19 +73,31 @@
     </div>
 
     <script>
-      if ('addEventListener' in window) {
-        window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+      if ("addEventListener" in window) {
+        window.addEventListener("load", function () {
+          document.body.className = document.body.className.replace(
+            /\bis-loading\b/,
+            ""
+          );
+        });
+        document.body.className += navigator.userAgent.match(/(MSIE|rv:11\.0)/)
+          ? " is-ie"
+          : "";
       }
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55944551-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-55944551-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-55944551-1');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-55944551-1");
     </script>
   </body>
 </html>
