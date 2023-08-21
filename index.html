@@ -1,103 +1,73 @@
 <!DOCTYPE html>
 <!--
-  Identity by HTML5 UP
-  html5up.net | @n33co
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
   <head>
-    <title>Pradip Caulagi homepage</title>
+    <title>Homepage of Pradip Caulagi</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!--[if lte IE 9
-      ]><link rel="stylesheet" href="assets/css/ie9.css"
-    /><![endif]-->
-    <!--[if lte IE 8
-      ]><link rel="stylesheet" href="assets/css/ie8.css"
-    /><![endif]-->
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
   </head>
-  <body class="is-loading">
+  <body class="is-preload">
     <div id="wrapper">
-      <section id="main">
-        <header>
-          <span class="avatar"><img src="images/avatar.png" alt="" /></span>
-          <h1>Pradip Caulagi</h1>
-          <p>Backend/Platform engineer</p>
-        </header>
-        <footer>
-          <ul class="icons">
-            <li>
-              <a
-                href="https://twitter.com/caulagi"
-                title="Twitter"
-                class="fa-twitter"
-                >Twitter</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://github.com/caulagi"
-                title="Github"
-                class="fa-github"
-                >Github</a
-              >
-            </li>
-            <li>
-              <a href="https://blog.caulagi.com" title="Blog" class="fa-book"
-                >Blog</a
-              >
-            </li>
+      <header id="header">
+        <div class="logo">
+          <span class="icon fa-diamond"></span>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <h1>Pradip Caulagi</h1>
+            <p>Experienced developer &amp; platform engineer</p>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="https://blog.caulagi.com" target="_blank">Blog</a></li>
             <li>
               <a
                 href="https://www.linkedin.com/in/pradipcaulagi"
-                title="Linkedin"
-                class="fa-linkedin"
+                target="_blank"
                 >Linkedin</a
               >
             </li>
+            <li>
+              <a href="https://github.com/caulagi" target="_blank">Github</a>
+            </li>
+            <li>
+              <a
+                rel="me"
+                href="https://mastodon.social/@caulagi"
+                target="_blank"
+                >Mastodon</a
+              >
+            </li>
           </ul>
-        </footer>
-      </section>
+        </nav>
+      </header>
 
       <footer id="footer">
-        <ul class="copyright">
-          <li>&copy; 2022 Pradip Caulagi</li>
-          <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-        </ul>
+        <p class="copyright">
+          &copy; Pradip Caulagi. Design:
+          <a href="https://html5up.net">HTML5 UP</a>.
+        </p>
       </footer>
     </div>
 
-    <script>
-      if ("addEventListener" in window) {
-        window.addEventListener("load", function () {
-          document.body.className = document.body.className.replace(
-            /\bis-loading\b/,
-            ""
-          );
-        });
-        document.body.className += navigator.userAgent.match(/(MSIE|rv:11\.0)/)
-          ? " is-ie"
-          : "";
-      }
-    </script>
+    <div id="bg"></div>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-55944551-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-55944551-1");
-    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
