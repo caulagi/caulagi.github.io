@@ -1,0 +1,35 @@
+# Pradip Caulagi
+
+An easy-going, social, and humble engineer and problem solver based in Stockholm, Sweden. Experienced developer and platform engineer specializing in reliability, scalability, and developer experience.
+
+## About
+
+Pradip Caulagi is an experienced developer and platform engineer based in Stockholm, Sweden. He has solid experience in infrastructure and reliability engineering with a focus on cloud technologies. His personal homepage is at [caulagi.com](https://caulagi.com).
+
+## Skills & Expertise
+
+- **Kubernetes**: CKAD certified (issued Feb 2024, expires Feb 2027)
+- **Cloud Platforms**: GCP specialist with AWS experience
+- **Infrastructure as Code**: Terraform
+- **Programming Languages**: 10+ years with Python and Go, some Rust
+- **Specialization**: Production issue debugging, system reliability, scalability, and developer experience
+
+## Professional Interests
+
+- NixOS and declarative system configuration
+- Kubernetes cluster management
+- Cloud infrastructure modernization
+- Community involvement (organizes Stockholm NixOS meetups)
+
+## Education
+
+- **Paderborn University** (2003-2005): Research intern, Mathematics. Worked on circular coloring — a special instance of the normal graph coloring problem, determining the circular chromatic number of special families of graphs.
+- **International Institute of Information Technology Bangalore** (2001-2002): PGPIT (equivalent to MTech), Information Technology. Advanced courses in algorithms, programming languages, operating systems, relational databases, and security and cryptography.
+- **University of Mysore** (1996-2000): Bachelor of Engineering, Mechanical. Completed with excellent grades and awarded best bachelor's thesis.
+
+## Links
+
+- **Blog**: [blog.caulagi.com](https://blog.caulagi.com) - Technical blog with articles on software development and platform engineering.
+- **LinkedIn**: [linkedin.com/in/pradipcaulagi](https://www.linkedin.com/in/pradipcaulagi) - Professional profile and career history.
+- **GitHub**: [github.com/caulagi](https://github.com/caulagi) - Open source projects and contributions.
+- **Mastodon**: [mastodon.social/@caulagi](https://mastodon.social/@caulagi) - Social media presence on the Fediverse.

@@ -1,0 +1,10 @@
+# Pradip Caulagi
+
+> An easy-going, social, and humble engineer and problem solver based in Stockholm, Sweden. Experienced developer and platform engineer specializing in reliability, scalability, and developer experience. CKAD certified with 10+ years of experience in Python, Go, and cloud infrastructure (GCP, AWS, Terraform, Kubernetes).
+
+## Links
+
+- [Blog](https://blog.caulagi.com): Technical blog with articles on software development and platform engineering
+- [LinkedIn](https://www.linkedin.com/in/pradipcaulagi): Professional profile and career history
+- [GitHub](https://github.com/caulagi): Open source projects and code
+- [Mastodon](https://mastodon.social/@caulagi): Social media presence on the Fediverse
