@@ -4,10 +4,76 @@
   <meta charset="utf-8">
   <title>Pradip Caulagi — Platform & Systems Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Pradip Caulagi — platform & systems engineer. Builds and fixes things in production. Python, Go, Rust, Kubernetes.">
+  <meta name="description" content="Pradip Caulagi — platform & systems engineer in Stockholm. Builds and fixes things in production. Kubernetes (CKAD), Python, Go, Rust, Terraform, GCP.">
+  <meta name="author" content="Pradip Caulagi">
+  <meta name="theme-color" content="#C24527">
 
+  <link rel="canonical" href="https://caulagi.com/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="Blog — Pradip Caulagi" href="https://blog.caulagi.com/index.xml">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Pradip Caulagi">
+  <meta property="og:title" content="Pradip Caulagi — Platform & Systems Engineer">
+  <meta property="og:description" content="Developer and platform engineer in Stockholm. I build and fix things in production — distributed systems, idiomatic code, and a calm pager.">
+  <meta property="og:url" content="https://caulagi.com/">
+  <meta property="og:image" content="https://caulagi.com/assets/mood-01.jpg">
+  <meta property="og:image:alt" content="Pradip Caulagi">
+  <meta property="profile:first_name" content="Pradip">
+  <meta property="profile:last_name" content="Caulagi">
+  <meta property="profile:username" content="caulagi">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pradip Caulagi — Platform & Systems Engineer">
+  <meta name="twitter:description" content="Developer and platform engineer in Stockholm. I build and fix things in production.">
+  <meta name="twitter:image" content="https://caulagi.com/assets/mood-01.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="site.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&family=JetBrains+Mono:wght@400;500;600&family=Caveat:wght@500;600;700&display=swap">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pradip Caulagi",
+    "givenName": "Pradip",
+    "familyName": "Caulagi",
+    "url": "https://caulagi.com/",
+    "image": "https://caulagi.com/assets/mood-01.jpg",
+    "jobTitle": "Platform & Systems Engineer",
+    "description": "Developer and platform engineer in Stockholm. Builds and fixes things in production — distributed systems, idiomatic code, and a calm pager.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Stockholm",
+      "addressCountry": "SE"
+    },
+    "knowsAbout": [
+      "Kubernetes", "Distributed Systems", "Site Reliability Engineering",
+      "Python", "Go", "Rust", "SQL",
+      "Terraform", "Google Cloud Platform", "Prometheus", "Grafana",
+      "gRPC", "Backend APIs", "Platform Engineering"
+    ],
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certification",
+      "name": "Certified Kubernetes Application Developer (CKAD)",
+      "recognizedBy": { "@type": "Organization", "name": "The Linux Foundation" }
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Paderborn University" },
+      { "@type": "CollegeOrUniversity", "name": "International Institute of Information Technology Bangalore" },
+      { "@type": "CollegeOrUniversity", "name": "University of Mysore" }
+    ],
+    "sameAs": [
+      "https://github.com/caulagi",
+      "https://www.linkedin.com/in/pradipcaulagi",
+      "https://mastodon.social/@caulagi",
+      "https://blog.caulagi.com/"
+    ]
+  }
+  </script>
 
   <!-- Cloudflare Web Analytics -->
   <script>
@@ -20,12 +86,427 @@
     })();
   </script>
   <!-- End Cloudflare Web Analytics -->
-
-  <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 </head>
 <body>
-  <div id="root"></div>
-  <script src="app.js"></script>
+
+  <!-- Icon sprite (Material-style line icons + brand marks) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-waving_hand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 11V6a2 2 0 0 0-4 0v5"/>
+        <path d="M14 10V4a2 2 0 0 0-4 0v6"/>
+        <path d="M10 10.5V6a2 2 0 0 0-4 0v8"/>
+        <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/>
+      </symbol>
+      <symbol id="i-open_in_new" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+      </symbol>
+      <symbol id="i-arrow_forward" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+      </symbol>
+      <symbol id="i-description" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/>
+        <path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M8 13h8"/><path d="M8 17h6"/>
+      </symbol>
+      <symbol id="i-auto_awesome" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3 13.8 9.2 20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8L12 3z"/>
+        <path d="M19 3v4"/><path d="M17 5h4"/><path d="M5 17v2"/><path d="M4 18h2"/>
+      </symbol>
+      <symbol id="i-build" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+      </symbol>
+      <symbol id="i-health_and_safety" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+        <path d="m9 12 2 2 4-4"/>
+      </symbol>
+      <symbol id="i-email" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="20" height="16" x="2" y="4" rx="2"/>
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+      </symbol>
+      <symbol id="i-family_restroom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+        <circle cx="9" cy="7" r="4"/>
+        <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+      </symbol>
+      <symbol id="i-chess" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/>
+        <path d="M5 21h14"/>
+      </symbol>
+      <symbol id="i-music_note" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 18V5l12-2v13"/>
+        <circle cx="6" cy="18" r="3"/>
+        <circle cx="18" cy="16" r="3"/>
+      </symbol>
+      <symbol id="i-directions_walk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"/>
+        <path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z"/>
+        <path d="M16 17h4"/><path d="M4 13h4"/>
+      </symbol>
+      <symbol id="i-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+        <path d="M9 18c-4.51 2-5-2-7-2"/>
+      </symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+        <rect width="4" height="12" x="2" y="9"/>
+        <circle cx="4" cy="4" r="2"/>
+      </symbol>
+      <symbol id="i-mastodon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M21.58 13.913c-.29 1.469-2.592 3.121-5.238 3.396-1.379.143-2.737.275-4.185.215-2.368-.099-4.237-.487-4.237-.487 0 .231.014.451.043.659.308 2.339 2.319 2.478 4.224 2.541 1.923.065 3.638-.473 3.638-.473l.078 1.736s-1.345.722-3.742.853c-1.323.072-2.965-.034-4.875-.541-4.143-1.098-4.857-5.514-4.966-9.997-.033-1.331-.012-2.587-.012-3.638 0-4.585 3.006-5.93 3.006-5.93C6.83.948 9.43.768 12.131.748h.066c2.703.02 5.304.2 6.823.898 0 0 3.006 1.346 3.006 5.93 0 0 .038 3.383-.422 5.737M18.41 7.838v6.027h-2.39V8.017c0-1.227-.514-1.85-1.546-1.85-1.142 0-1.713.737-1.713 2.197v3.183h-2.374V8.363c0-1.46-.572-2.197-1.713-2.197-1.032 0-1.546.623-1.546 1.85v5.85H4.74V7.84c0-1.225.313-2.199.94-2.92.646-.72 1.49-1.09 2.538-1.09 1.213 0 2.13.466 2.738 1.398l.594.996.594-.996c.609-.932 1.526-1.398 2.738-1.398 1.048 0 1.892.37 2.538 1.09.627.72.94 1.694.94 2.918"/>
+      </symbol>
+      <symbol id="i-rss" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 11a9 9 0 0 1 9 9"/>
+        <path d="M4 4a16 16 0 0 1 16 16"/>
+        <circle cx="5" cy="19" r="1"/>
+      </symbol>
+      <symbol id="i-arrow_up_right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7 7h10v10"/><path d="M7 17 17 7"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- App bar -->
+  <nav class="appbar">
+    <div class="appbar__links">
+      <a class="appbar__link" href="#profile">Profile</a>
+      <a class="appbar__link" href="#moods">Field manual</a>
+      <a class="appbar__link" href="#contact">Say hi</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <div class="hero__greet">hi <span>👋</span> &nbsp; i'm</div>
+        <h1 class="md-display-lg">Pradip <em style="font-style:normal;color:var(--md-primary)">Caulagi.</em></h1>
+        <p class="hero__lead">Developer and platform engineer. I <strong>build &amp; fix things in production</strong> — distributed systems, idiomatic code, and a calm pager.</p>
+        <div class="hero__cta-row">
+          <a class="md-btn md-btn--filled" href="#contact">
+            <svg class="msym" style="width:1em;height:1em;font-size:18px" aria-hidden="true"><use href="#i-waving_hand"/></svg>
+            Say hi
+          </a>
+          <a class="md-btn md-btn--outlined" href="https://github.com/caulagi" target="_blank" rel="noreferrer">
+            <svg class="msym" style="width:1em;height:1em;font-size:18px" aria-hidden="true"><use href="#i-open_in_new"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+      <div class="hero__photo-wrap">
+        <div class="photo-card__hint">
+          tap to cycle
+          <svg class="msym" style="width:1em;height:1em" aria-hidden="true"><use href="#i-arrow_forward"/></svg>
+        </div>
+        <div class="photo-card" id="hero-card" role="button" tabindex="0" aria-label="Next mood">
+          <div class="photo-card__media">
+            <img src="assets/mood-01.jpg" alt="" class="photo-card__img is-active" data-code="OK" data-caption="deploy succeeded" loading="eager">
+            <img src="assets/mood-03.jpg" alt="" class="photo-card__img" data-code="???" data-caption="this stack trace makes no sense" loading="lazy">
+            <img src="assets/mood-06.jpg" alt="" class="photo-card__img" data-code="RCA" data-caption="told you the cache was the problem" loading="lazy">
+            <img src="assets/mood-09.jpg" alt="" class="photo-card__img" data-code="WTF" data-caption="who pushed to main?" loading="lazy">
+            <img src="assets/mood-10.jpg" alt="" class="photo-card__img" data-code="YOLO" data-caption="shipped on a friday" loading="lazy">
+            <img src="assets/mood-12.jpg" alt="" class="photo-card__img" data-code="P1" data-caption="drafting the post-mortem" loading="lazy">
+            <span class="photo-card__counter" id="hero-counter">01/06</span>
+            <span class="photo-card__badge" id="hero-badge">OK</span>
+          </div>
+          <div class="photo-card__caption" id="hero-caption">deploy succeeded</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profile -->
+  <section class="section section--container" id="profile">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="md-label">01 / Profile</span>
+        <h2 class="section__title">A developer who lives close to the <em>production floor</em>.</h2>
+      </div>
+      <div class="profile">
+        <div class="profile__intro">
+          <div class="profile__current">
+            <svg class="msym" style="width:1em;height:1em;font-size:22px" aria-hidden="true"><use href="#i-auto_awesome"/></svg>
+            <div class="profile__current-text">
+              <span class="profile__current-label">currently into</span>
+              <span class="profile__current-value">Kubernetes, Rust, WASM &amp; Nix</span>
+            </div>
+          </div>
+        </div>
+        <div class="profile__sheet">
+          <span class="profile__sheet-tag">
+            <svg class="msym" style="width:1em;height:1em" aria-hidden="true"><use href="#i-description"/></svg>
+            Spec sheet
+          </span>
+          <div class="profile__row">
+            <span class="profile__row-label">Role</span>
+            <span class="profile__row-value">Platform / Systems Developer</span>
+          </div>
+          <div class="profile__row">
+            <span class="profile__row-label">Focus</span>
+            <span class="profile__row-value">Distributed systems · Production reliability</span>
+          </div>
+          <div class="profile__row">
+            <span class="profile__row-label">Track</span>
+            <span class="profile__row-value">Startups → mid-size → large</span>
+          </div>
+          <div class="profile__row">
+            <span class="profile__row-label">Languages</span>
+            <div class="profile__row-chips">
+              <span class="md-chip md-chip--primary">python</span>
+              <span class="md-chip md-chip--primary">go</span>
+              <span class="md-chip md-chip--primary">rust</span>
+              <span class="md-chip">sql</span>
+            </div>
+          </div>
+          <div class="profile__row">
+            <span class="profile__row-label">Infra</span>
+            <div class="profile__row-chips">
+              <span class="md-chip md-chip--primary">kubernetes</span>
+              <span class="md-chip">terraform</span>
+              <span class="md-chip">gcp</span>
+              <span class="md-chip">prometheus</span>
+              <span class="md-chip">grafana</span>
+            </div>
+          </div>
+          <div class="profile__row">
+            <span class="profile__row-label">I build</span>
+            <div class="profile__row-chips">
+              <span class="md-chip md-chip--primary">gRPC services</span>
+              <span class="md-chip">backend APIs</span>
+              <span class="md-chip">platforms</span>
+              <span class="md-chip">internal tools</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Production -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="md-label">02 / In production</span>
+        <h2 class="section__title">I build and I fix — <em>usually on the same day</em>.</h2>
+      </div>
+      <div class="prod">
+        <div class="prod__col prod__col--build">
+          <span class="prod__col-eyebrow prod__col-eyebrow--build">
+            <svg class="msym" style="width:1em;height:1em" aria-hidden="true"><use href="#i-build"/></svg>
+            Build
+          </span>
+          <h3 class="prod__col-title">Backends that hold up under load.</h3>
+          <ul class="prod__col-list">
+            <li>Designing and shipping backend APIs and gRPC services.</li>
+            <li>Idiomatic, well-tested code — reviewed by humans, exercised by CI.</li>
+            <li>Internal platforms that get out of developers' way.</li>
+            <li>Contributing back to the open-source projects I depend on.</li>
+          </ul>
+        </div>
+        <div class="prod__col prod__col--ops">
+          <span class="prod__col-eyebrow prod__col-eyebrow--ops">
+            <svg class="msym" style="width:1em;height:1em" aria-hidden="true"><use href="#i-health_and_safety"/></svg>
+            Operate
+          </span>
+          <h3 class="prod__col-title">A calm pager, a quiet on-call.</h3>
+          <ul class="prod__col-list">
+            <li>Running production systems on Kubernetes across cloud providers.</li>
+            <li>Diagnosing the gnarly stuff — latency, throughput, weird tail behaviour.</li>
+            <li>Helping teammates daily: code review, design review, the occasional rubber duck.</li>
+            <li>Turning incidents into runbooks, alerts, and tests so they don't come back.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Field Manual -->
+  <section class="section section--container" id="moods">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="md-label">03 / Field manual</span>
+        <h2 class="section__title">A platform engineer's <em>emotional dashboard</em>.</h2>
+      </div>
+      <div class="field">
+        <div class="field__cell">
+          <div class="photo-card">
+            <div class="photo-card__media">
+              <img src="assets/mood-01.jpg" alt="" loading="lazy" class="photo-card__img is-active">
+              <span class="photo-card__counter">01/06</span>
+              <span class="photo-card__badge">OK</span>
+            </div>
+            <div class="photo-card__caption">deploy succeeded</div>
+          </div>
+        </div>
+        <div class="field__cell">
+          <div class="photo-card">
+            <div class="photo-card__media">
+              <img src="assets/mood-03.jpg" alt="" loading="lazy" class="photo-card__img is-active">
+              <span class="photo-card__counter">02/06</span>
+              <span class="photo-card__badge">???</span>
+            </div>
+            <div class="photo-card__caption">this stack trace makes no sense</div>
+          </div>
+        </div>
+        <div class="field__cell">
+          <div class="photo-card">
+            <div class="photo-card__media">
+              <img src="assets/mood-06.jpg" alt="" loading="lazy" class="photo-card__img is-active">
+              <span class="photo-card__counter">03/06</span>
+              <span class="photo-card__badge">RCA</span>
+            </div>
+            <div class="photo-card__caption">told you the cache was the problem</div>
+          </div>
+        </div>
+        <div class="field__cell">
+          <div class="photo-card">
+            <div class="photo-card__media">
+              <img src="assets/mood-09.jpg" alt="" loading="lazy" class="photo-card__img is-active">
+              <span class="photo-card__counter">04/06</span>
+              <span class="photo-card__badge">WTF</span>
+            </div>
+            <div class="photo-card__caption">who pushed to main?</div>
+          </div>
+        </div>
+        <div class="field__cell">
+          <div class="photo-card">
+            <div class="photo-card__media">
+              <img src="assets/mood-10.jpg" alt="" loading="lazy" class="photo-card__img is-active">
+              <span class="photo-card__counter">05/06</span>
+              <span class="photo-card__badge">YOLO</span>
+            </div>
+            <div class="photo-card__caption">shipped on a friday</div>
+          </div>
+        </div>
+        <div class="field__cell">
+          <div class="photo-card">
+            <div class="photo-card__media">
+              <img src="assets/mood-12.jpg" alt="" loading="lazy" class="photo-card__img is-active">
+              <span class="photo-card__counter">06/06</span>
+              <span class="photo-card__badge">P1</span>
+            </div>
+            <div class="photo-card__caption">drafting the post-mortem</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Outside -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="md-label">04 / Outside the terminal</span>
+        <h2 class="section__title">When the laptop <em>closes</em>.</h2>
+      </div>
+      <div class="outside">
+        <div class="outside-card">
+          <div class="outside-card__icon">
+            <svg class="msym" style="width:1em;height:1em" aria-hidden="true"><use href="#i-family_restroom"/></svg>
+          </div>
+          <span class="outside-card__label">Family</span>
+          <span class="outside-card__title">Girlfriend &amp; two kids.</span>
+          <p class="outside-card__body">The most distributed system I help maintain.</p>
+        </div>
+        <div class="outside-card">
+          <div class="outside-card__icon">
+            <svg class="msym" style="width:1em;height:1em" aria-hidden="true"><use href="#i-chess"/></svg>
+          </div>
+          <span class="outside-card__label">Game</span>
+          <span class="outside-card__title">Chess.</span>
+          <p class="outside-card__body">I watch and play. Tactics over openings, endgames over both.</p>
+        </div>
+        <div class="outside-card">
+          <div class="outside-card__icon">
+            <svg class="msym" style="width:1em;height:1em" aria-hidden="true"><use href="#i-music_note"/></svg>
+          </div>
+          <span class="outside-card__label">Listening</span>
+          <span class="outside-card__title">Indian classical.</span>
+          <p class="outside-card__body">Hindustani and Carnatic both. Ask me what to start with.</p>
+        </div>
+        <div class="outside-card">
+          <div class="outside-card__icon">
+            <svg class="msym" style="width:1em;height:1em" aria-hidden="true"><use href="#i-directions_walk"/></svg>
+          </div>
+          <span class="outside-card__label">Lately</span>
+          <span class="outside-card__title">Long walks.</span>
+          <p class="outside-card__body">Found in 2026. Best debugging tool I've added in years.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--container" id="contact">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="md-label">05 / Say hi</span>
+      </div>
+      <div class="contact">
+        <div>
+          <h2 class="section__title">Happy to <em>hear from you</em>.</h2>
+          <p class="hero__lead" style="margin-top:16px">Roles, side projects, ragas, a good chess puzzle — all welcome. Easiest is email. If you'd rather poke around first, I'm on the usual places.</p>
+          <a class="contact__email-card" href="mailto:caulagi@gmail.com">
+            <svg class="msym" style="width:1em;height:1em" aria-hidden="true"><use href="#i-email"/></svg>
+            <div class="contact__email-card-text">
+              <span class="contact__email-card-label">Email</span>
+              <span class="contact__email-card-addr">caulagi@gmail.com</span>
+            </div>
+            <button class="contact__email-card-copy" id="email-copy" type="button" title="Copy email">copy</button>
+          </a>
+        </div>
+        <div class="contact__links">
+          <a class="contact-link" href="https://github.com/caulagi" target="_blank" rel="noreferrer">
+            <svg class="contact-link__icon" aria-hidden="true"><use href="#i-github"/></svg>
+            <span class="contact-link__label">GitHub</span>
+            <span class="contact-link__handle">@caulagi</span>
+            <svg class="contact-link__arrow" aria-hidden="true"><use href="#i-arrow_up_right"/></svg>
+          </a>
+          <a class="contact-link" href="https://mastodon.social/@caulagi" target="_blank" rel="noreferrer me">
+            <svg class="contact-link__icon" aria-hidden="true"><use href="#i-mastodon"/></svg>
+            <span class="contact-link__label">Mastodon</span>
+            <span class="contact-link__handle">@caulagi@mastodon.social</span>
+            <svg class="contact-link__arrow" aria-hidden="true"><use href="#i-arrow_up_right"/></svg>
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/pradipcaulagi" target="_blank" rel="noreferrer">
+            <svg class="contact-link__icon" aria-hidden="true"><use href="#i-linkedin"/></svg>
+            <span class="contact-link__label">LinkedIn</span>
+            <span class="contact-link__handle">in/pradipcaulagi</span>
+            <svg class="contact-link__arrow" aria-hidden="true"><use href="#i-arrow_up_right"/></svg>
+          </a>
+          <a class="contact-link" href="https://blog.caulagi.com/" target="_blank" rel="noreferrer">
+            <svg class="contact-link__icon" aria-hidden="true"><use href="#i-rss"/></svg>
+            <span class="contact-link__label">Blog</span>
+            <span class="contact-link__handle">blog.caulagi.com</span>
+            <svg class="contact-link__arrow" aria-hidden="true"><use href="#i-arrow_up_right"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__inner">
+        <div class="footer__motto" id="footer-quote">
+          “Everything fails all the time.” <span class="footer__motto-author">— Werner Vogels</span>
+        </div>
+        <div class="footer__meta">
+          <span>© <span id="footer-year">2026</span> · pradip caulagi</span>
+          <span class="footer__meta-dot"></span>
+          <span>built with material, coral &amp; ☕</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FAB -->
+  <a class="fab" href="#contact" aria-label="Say hi">
+    <svg class="msym" style="width:1em;height:1em" aria-hidden="true"><use href="#i-waving_hand"/></svg>
+    Say hi
+  </a>
+
+  <script src="app.js" defer></script>
 </body>
 </html>
