@@ -1,0 +1,256 @@
+/* ============================================================
+   Playground Tech — Colors & Type
+   ============================================================
+   Default theme is LIGHT (paper). Dark navy is reserved for
+   hero treatments, the footer, and other "spotlight" sections.
+
+   The brand is intentionally near-monochromatic: navy + warm
+   greys + white + a soft sky-blue link tint. Photography (not
+   color) carries the visual weight.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter:wght@300..700&family=JetBrains+Mono:wght@400..700&display=swap');
+
+:root {
+  /* ──────────────────────────────────────────────────────────
+     COLOR — Brand
+     ────────────────────────────────────────────────────────── */
+  /* Navy — the one pigment that matters. From the PT mark fill. */
+  --pgt-navy-1000: #060a17;     /* deepest — hero + footer */
+  --pgt-navy-900:  #0B1228;     /* hero gradient stop */
+  --pgt-navy-800:  #141B33;
+  --pgt-navy-700:  #1D2643;
+  --pgt-navy-600:  #2A3457;
+  --pgt-navy-500:  #3B486F;
+
+  /* Greyscale — warm, paper-leaning */
+  --pgt-paper:     #FFFFFF;      /* card surface */
+  --pgt-surface:   #F4F4F2;      /* section bg (the warm light grey on the site) */
+  --pgt-surface-2: #ECECE8;
+  --pgt-line:      #E2E2DC;      /* hairline divider */
+  --pgt-line-2:    #D1D1C9;
+
+  /* Foreground on light */
+  --pgt-ink:       #0A0F22;      /* near-navy black for body */
+  --pgt-ink-2:     #3A4055;      /* muted body */
+  --pgt-ink-3:     #6B7286;      /* meta / labels */
+  --pgt-ink-4:     #9298A8;      /* placeholder */
+
+  /* Foreground on navy */
+  --pgt-snow:      #FFFFFF;
+  --pgt-snow-2:    #C7CCDB;
+  --pgt-snow-3:    #8A93AB;
+
+  /* ──────────────────────────────────────────────────────────
+     COLOR — Accents (restrained)
+     The brand doesn't have a loud signature accent. Use these
+     SPARINGLY — links, focus rings, tiny status dots only.
+     ────────────────────────────────────────────────────────── */
+  --pgt-link:      #3F6BE6;      /* sky-blue, only for in-line links */
+  --pgt-link-soft: #DCE6FF;
+  --pgt-success:   #2EA86D;
+  --pgt-warning:   #E0A33A;
+  --pgt-danger:    #D9534B;
+
+  /* ──────────────────────────────────────────────────────────
+     COLOR — Semantic tokens (default = light)
+     ────────────────────────────────────────────────────────── */
+  --pgt-bg:        var(--pgt-surface);
+  --pgt-bg-card:   var(--pgt-paper);
+  --pgt-fg:        var(--pgt-ink);
+  --pgt-fg-2:      var(--pgt-ink-2);
+  --pgt-fg-3:      var(--pgt-ink-3);
+  --pgt-border:    var(--pgt-line);
+  --pgt-border-2:  var(--pgt-line-2);
+  --pgt-on-cta:    var(--pgt-snow);     /* text color on a dark CTA */
+}
+
+/* Navy theme — for hero, footer, special sections */
+[data-theme="navy"] {
+  --pgt-bg:        var(--pgt-navy-1000);
+  --pgt-bg-card:   var(--pgt-navy-900);
+  --pgt-fg:        var(--pgt-snow);
+  --pgt-fg-2:      var(--pgt-snow-2);
+  --pgt-fg-3:      var(--pgt-snow-3);
+  --pgt-border:    var(--pgt-navy-700);
+  --pgt-border-2:  var(--pgt-navy-600);
+}
+
+:root {
+  /* ──────────────────────────────────────────────────────────
+     TYPE — Families
+     ────────────────────────────────────────────────────────── */
+  /* Bricolage Grotesque is a free variable display sans whose
+     bold weights match the rounded, slightly slab-flavored
+     character of the Playground wordmark. ⚠️ confirm with brand. */
+  --pgt-font-display: "Bricolage Grotesque", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --pgt-font-sans:    "Inter", "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --pgt-font-mono:    "JetBrains Mono", "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+
+  /* ──────────────────────────────────────────────────────────
+     TYPE — Scale
+     ────────────────────────────────────────────────────────── */
+  --pgt-fs-12:   12px;
+  --pgt-fs-13:   13px;
+  --pgt-fs-14:   14px;
+  --pgt-fs-15:   15px;
+  --pgt-fs-16:   16px;
+  --pgt-fs-18:   18px;
+  --pgt-fs-20:   20px;
+  --pgt-fs-22:   22px;
+  --pgt-fs-26:   26px;
+  --pgt-fs-32:   32px;
+  --pgt-fs-40:   40px;
+  --pgt-fs-48:   48px;
+  --pgt-fs-56:   56px;
+  --pgt-fs-72:   72px;
+  --pgt-fs-96:   96px;
+
+  --pgt-fw-light:    300;
+  --pgt-fw-regular:  400;
+  --pgt-fw-medium:   500;
+  --pgt-fw-semibold: 600;
+  --pgt-fw-bold:     700;
+
+  --pgt-lh-tight:  1.05;
+  --pgt-lh-snug:   1.18;
+  --pgt-lh-normal: 1.5;
+  --pgt-lh-loose:  1.65;
+
+  --pgt-ls-tight: -0.025em;
+  --pgt-ls-snug:  -0.012em;
+  --pgt-ls-norm:  0;
+  --pgt-ls-wide:  0.04em;
+
+  /* ──────────────────────────────────────────────────────────
+     SPACING — 4px base
+     ────────────────────────────────────────────────────────── */
+  --pgt-sp-1:  4px;
+  --pgt-sp-2:  8px;
+  --pgt-sp-3:  12px;
+  --pgt-sp-4:  16px;
+  --pgt-sp-5:  20px;
+  --pgt-sp-6:  24px;
+  --pgt-sp-8:  32px;
+  --pgt-sp-10: 40px;
+  --pgt-sp-12: 48px;
+  --pgt-sp-16: 64px;
+  --pgt-sp-20: 80px;
+  --pgt-sp-24: 96px;
+  --pgt-sp-32: 128px;
+
+  /* ──────────────────────────────────────────────────────────
+     RADII — soft, generous on cards
+     ────────────────────────────────────────────────────────── */
+  --pgt-r-4:    4px;
+  --pgt-r-8:    8px;
+  --pgt-r-12:  12px;
+  --pgt-r-16:  16px;
+  --pgt-r-20:  20px;     /* default for cards on the live site */
+  --pgt-r-24:  24px;
+  --pgt-r-pill: 999px;
+
+  /* ──────────────────────────────────────────────────────────
+     SHADOWS — soft, paper-like
+     ────────────────────────────────────────────────────────── */
+  --pgt-shadow-1: 0 1px 2px rgba(10,15,34,0.04), 0 0 0 1px rgba(10,15,34,0.04);
+  --pgt-shadow-2: 0 6px 18px -4px rgba(10,15,34,0.08), 0 2px 4px rgba(10,15,34,0.04);
+  --pgt-shadow-3: 0 24px 48px -16px rgba(10,15,34,0.18), 0 4px 12px -4px rgba(10,15,34,0.08);
+  --pgt-shadow-focus: 0 0 0 4px rgba(63,107,230,0.20);
+
+  /* Motion */
+  --pgt-ease:        cubic-bezier(0.2, 0, 0, 1);
+  --pgt-ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --pgt-dur-fast:    140ms;
+  --pgt-dur:         220ms;
+  --pgt-dur-slow:    400ms;
+}
+
+/* ============================================================
+   SEMANTIC TYPE STYLES
+   ============================================================ */
+.pgt-display {
+  font-family: var(--pgt-font-display);
+  font-weight: var(--pgt-fw-bold);
+  font-size: clamp(64px, 8vw, 96px);
+  line-height: var(--pgt-lh-tight);
+  letter-spacing: var(--pgt-ls-tight);
+  color: var(--pgt-fg);
+}
+
+.pgt-h1 {
+  font-family: var(--pgt-font-display);
+  font-weight: var(--pgt-fw-bold);
+  font-size: clamp(40px, 5vw, 56px);
+  line-height: var(--pgt-lh-tight);
+  letter-spacing: var(--pgt-ls-tight);
+  color: var(--pgt-fg);
+}
+
+.pgt-h2 {
+  font-family: var(--pgt-font-display);
+  font-weight: var(--pgt-fw-bold);
+  font-size: clamp(32px, 3.5vw, 40px);
+  line-height: var(--pgt-lh-snug);
+  letter-spacing: var(--pgt-ls-snug);
+  color: var(--pgt-fg);
+}
+
+.pgt-h3 {
+  font-family: var(--pgt-font-display);
+  font-weight: var(--pgt-fw-semibold);
+  font-size: var(--pgt-fs-26);
+  line-height: var(--pgt-lh-snug);
+  letter-spacing: var(--pgt-ls-snug);
+}
+
+.pgt-h4 {
+  font-family: var(--pgt-font-display);
+  font-weight: var(--pgt-fw-semibold);
+  font-size: var(--pgt-fs-20);
+  line-height: var(--pgt-lh-snug);
+}
+
+.pgt-lead {
+  font-family: var(--pgt-font-sans);
+  font-weight: var(--pgt-fw-regular);
+  font-size: var(--pgt-fs-18);
+  line-height: var(--pgt-lh-normal);
+  color: var(--pgt-fg-2);
+}
+
+.pgt-body {
+  font-family: var(--pgt-font-sans);
+  font-weight: var(--pgt-fw-regular);
+  font-size: var(--pgt-fs-15);
+  line-height: var(--pgt-lh-normal);
+  color: var(--pgt-fg);
+}
+
+.pgt-small {
+  font-family: var(--pgt-font-sans);
+  font-weight: var(--pgt-fw-regular);
+  font-size: var(--pgt-fs-13);
+  line-height: var(--pgt-lh-normal);
+  color: var(--pgt-fg-2);
+}
+
+.pgt-eyebrow {
+  font-family: var(--pgt-font-mono);
+  font-weight: var(--pgt-fw-medium);
+  font-size: var(--pgt-fs-12);
+  line-height: 1;
+  letter-spacing: var(--pgt-ls-wide);
+  text-transform: uppercase;
+  color: var(--pgt-fg-3);
+}
+
+.pgt-code,
+code.pgt-code {
+  font-family: var(--pgt-font-mono);
+  font-size: 0.92em;
+  background: rgba(10,15,34,0.05);
+  color: var(--pgt-ink);
+  padding: 0.1em 0.4em;
+  border-radius: var(--pgt-r-4);
+}
